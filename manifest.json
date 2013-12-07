@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hatebu Thumbnail Blocker",
+  "description": "Block thumnbails on Hatena Bookmark.",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["http://b.hatena.ne.jp/*"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
